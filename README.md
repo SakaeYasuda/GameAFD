@@ -1,5 +1,12 @@
 # Ilhas do Sábio: A Busca pelo Tesouro Escondido
 
+Autores: Eduardo Sakae Yasuda, Juan Pablo Rocha de Souza, Fernando Soares Leite Rodrigues e Marcos Hamilton Barbosa
+Prof(a): Kadidja Valeria Reginaldo de Oliveira 
+Curso: Ciência da Computação / Noturno 
+Semestre: 7 (sétimo) 
+Instituição: UDF 
+Tecnologias utilizadas: Godot, GDScript e Vscode
+
 ## Descrição
 Em "Ilhas do Sábio: A Busca pelo Tesouro Escondido", embarque em uma jornada inesquecível através de um arquipélago místico, repleto de ilhas enigmáticas, desafios naturais e personagens intrigantes. Este jogo de estratégia e exploração 2D, com uma vibrante estética pixel art, desafia você a descobrir tesouros lendários enquanto gerencia recursos, constrói defesas e desvenda segredos ancestrais.
 
