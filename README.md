@@ -1,10 +1,15 @@
 # Ilhas do Sábio: A Busca pelo Tesouro Escondido
 
 Autores: Eduardo Sakae Yasuda, Juan Pablo Rocha de Souza, Fernando Soares Leite Rodrigues e Marcos Hamilton Barbosa
+
 Prof(a): Kadidja Valeria Reginaldo de Oliveira 
+
 Curso: Ciência da Computação / Noturno 
+
 Semestre: 7 (sétimo) 
+
 Instituição: UDF 
+
 Tecnologias utilizadas: Godot, GDScript e Vscode
 
 ## Descrição
