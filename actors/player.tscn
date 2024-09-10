@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://m7vsx57fthd5"]
+[gd_scene load_steps=39 format=3 uid="uid://m7vsx57fthd5"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_w04t6"]
 [ext_resource type="Texture2D" uid="uid://1ex0oxa7oiru" path="res://assets/Warrior/Individual Sprite/Jump/Warrior_Jump_1.png" id="2_3biup"]
@@ -159,6 +159,9 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6iuyp"]
+radius = 15.1327
+
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(0, -1)
 collision_mask = 2
@@ -182,3 +185,13 @@ autoplay = "warrior_idle"
 frame_progress = 0.204408
 
 [node name="animator" type="AnimationPlayer" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="."]
+
+[node name="ActionableFinder" type="Area2D" parent="Marker2D"]
+collision_layer = 0
+collision_mask = 512
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Marker2D/ActionableFinder"]
+position = Vector2(0, -17)
+shape = SubResource("CircleShape2D_6iuyp")
