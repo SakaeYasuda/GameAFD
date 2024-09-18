@@ -367,7 +367,6 @@ size = Vector2(11, 35)
 [node name="Tp" type="Area2D"]
 position = Vector2(568, -26)
 script = ExtResource("1_snqga")
-next_level = "res://levels/world_02.tscn"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 light_mask = 2

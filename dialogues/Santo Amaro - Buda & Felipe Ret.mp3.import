@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddg1ktxuma6ob"
+path="res://.godot/imported/Santo Amaro - Buda & Felipe Ret.mp3-5930885a0e129679a82d9ebd8001ac97.mp3str"
+
+[deps]
+
+source_file="res://dialogues/Santo Amaro - Buda & Felipe Ret.mp3"
+dest_files=["res://.godot/imported/Santo Amaro - Buda & Felipe Ret.mp3-5930885a0e129679a82d9ebd8001ac97.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
