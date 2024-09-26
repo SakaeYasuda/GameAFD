@@ -1,7 +1,7 @@
 # Ilhas do Sábio: A Busca pelo Tesouro Escondido
 
 ## 🌍🔄 Descrição do Projeto
-Ilhas do Sábio: A Busca pelo Tesouro Escondido é um jogo educativo de estratégia e exploração em 2D, desenvolvido por Eduardo Sakae Yasuda e Juan Pablo Rocha de Souza, estudantes do 8º semestre de Ciência da Computação no Centro Universitário do Distrito Federal (UDF), sob a orientação da Professora Kadidja Valeria Reginaldo de Oliveira. O jogo foi desenvolvido usando as tecnologias *Godot*, *GDScript* e *VSCode*, e busca ensinar conceitos de **Autômatos de Pilha* e *Gramáticas Livres de Contexto* de forma lúdica e interativa.
+Ilhas do Sábio: A Busca pelo Tesouro Escondido é um jogo educativo de estratégia e exploração em 2D, desenvolvido por Eduardo Sakae Yasuda e Juan Pablo Rocha de Souza, estudantes do 8º semestre de Ciência da Computação no Centro Universitário do Distrito Federal (UDF), sob a orientação da Professora Kadidja Valeria Reginaldo de Oliveira. O jogo foi desenvolvido usando as tecnologias *Godot*, *GDScript* e *VSCode*, e busca ensinar conceitos de *Autômatos de Pilha* e *Gramáticas Livres de Contexto* de forma lúdica e interativa.
 
 ## 🎯 Objetivos Educacionais
 •⁠  ⁠*Introduzir conceitos de autômatos de pilha* de maneira prática e divertida.
