@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(0.875, 0.119629, 0.119629, 1),
+"color": Color(0.219177, 0.822966, 0.984375, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {
@@ -21,7 +21,7 @@
 },
 "default_portrait": "Foto",
 "description": "",
-"display_name": "Sasuke",
+"display_name": "Rei",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),

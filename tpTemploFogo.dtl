@@ -1,0 +1,7 @@
+caixeiro: Deseja uma carona para o Templo do Fogo?
+- Sim
+	caixeiro: Então vamos logo
+	[signal arg="tp"]
+- Não
+	[end_timeline]
+[end_timeline]

@@ -1,28 +1,59 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6vb61yrmxvij"]
+[gd_scene load_steps=5 format=3 uid="uid://b6vb61yrmxvij"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_elfgn"]
+[ext_resource type="Theme" uid="uid://clmqolemra7jj" path="res://assets/default.tres" id="2_h6etn"]
+[ext_resource type="FontFile" uid="uid://dfqmx5j67rvg2" path="res://assets/8-bit-hud.ttf" id="3_7f0fd"]
+[ext_resource type="Texture2D" uid="uid://bq5jrnwupv3mf" path="res://Screenshot_1.jpg" id="3_e8qh1"]
 
 [node name="Menu" type="Control"]
+clip_contents = true
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -647.0
+offset_top = -6.0
+offset_right = 649.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_h6etn")
 script = ExtResource("1_elfgn")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_left = 608.0
-offset_top = 289.0
-offset_right = 656.0
-offset_bottom = 329.0
+[node name="Screenshot1" type="Sprite2D" parent="."]
+position = Vector2(839, 462)
+texture = ExtResource("3_e8qh1")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="Button" type="Button" parent="."]
 layout_mode = 2
-
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
+offset_left = 543.0
+offset_top = 374.0
+offset_right = 753.0
+offset_bottom = 444.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_h6etn")
+theme_override_font_sizes/font_size = 25
 text = "Jogar"
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[node name="TextureButton" type="TextureButton" parent="Button"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 96.0
+offset_right = 73.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 151.0
+offset_top = 158.0
+offset_right = 1171.0
+offset_bottom = 254.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_7f0fd")
+theme_override_font_sizes/font_size = 60
+text = "Ilha dos Sabios"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

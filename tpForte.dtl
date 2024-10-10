@@ -1,0 +1,7 @@
+caixeiro: Deseja uma carona para o Forte Sombrio?
+- Sim
+	caixeiro: Então vamos logo
+	[signal arg="tp1"]
+- Não
+	[end_timeline]
+[end_timeline]
