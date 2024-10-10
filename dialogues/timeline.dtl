@@ -1,0 +1,10 @@
+reiDg: Ah, aventureiro, seja bem-vindo ao meu reino!
+reiDg: Ouvi rumores de que estás em busca de um tesouro, não é?
+- Sim
+	reiDg: Pois saiba que há, de fato, um grande baú escondido em algum lugar desse reino.
+	reiDg: Mas para abri-lo, precisas de uma senha secreta.
+	reiDg: Eu só sei que o primeiro digito é 6
+	reiDg: Mas lembre-se, aqui, tudo funciona como uma pilha – sim, igual aquelas que você usa pra organizar coisas!
+	reiDg: Cada decisão que você toma vai empilhando uma nova camada.
+- Não
+	reiDg: Então suma daqui!

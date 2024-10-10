@@ -180,9 +180,8 @@ editor_draw_limits = true
 [node name="animated" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -21)
 sprite_frames = SubResource("SpriteFrames_5jsl1")
-animation = &"warrior_idle"
+animation = &"jump"
 autoplay = "warrior_idle"
-frame_progress = 0.204408
 
 [node name="animator" type="AnimationPlayer" parent="."]
 
