@@ -61,7 +61,7 @@ Você é um viajante à procura de um tesouro lendário. Ao explorar cada ilha, 
 
 ## Contato
 
-Para mais informações, suporte ou feedback, sinta-se à vontade para nos contatar através de.
+Para mais informações, suporte ou feedback, sinta-se à vontade para nos contatar.
 
 ## Licença
 
