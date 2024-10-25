@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=3 uid="uid://c6bhmbyt6q2rh"]
+
+[ext_resource type="Script" path="res://GerenciadorSenhas.gd" id="1_1xo4l"]
+[ext_resource type="FontFile" uid="uid://dabiddvtrlsp7" path="res://at01.ttf" id="2_8l7rq"]
+[ext_resource type="Texture2D" uid="uid://sp1eo21sa5h4" path="res://assets/Final/Assets/Assets.png" id="2_gwnt6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cloib"]
+atlas = ExtResource("2_gwnt6")
+region = Rect2(240, 45, 16, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jadnf"]
+atlas = ExtResource("2_gwnt6")
+region = Rect2(256, 45, 16, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1it05"]
+atlas = ExtResource("2_gwnt6")
+region = Rect2(272, 45, 16, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrtw7"]
+atlas = ExtResource("2_gwnt6")
+region = Rect2(288, 45, 16, 19)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2oxqh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cloib")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jadnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1it05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrtw7")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxepm"]
+radius = 26.0
+
+[node name="BauSenha" type="Node2D"]
+script = ExtResource("1_1xo4l")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+offset_left = 120.0
+offset_top = 131.0
+offset_right = 160.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_8l7rq")
+theme_override_font_sizes/font_size = 0
+alignment = 1
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 108.0
+offset_top = 131.0
+offset_right = 172.0
+offset_bottom = 154.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_8l7rq")
+text = "Codigo errado!"
+
+[node name="Label2" type="Label" parent="."]
+visible = false
+offset_left = 89.0
+offset_top = 116.0
+offset_right = 192.0
+offset_bottom = 139.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_8l7rq")
+text = "Clique e insira a senha"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Bau" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(140, 172.883)
+scale = Vector2(1.5, 1.209)
+sprite_frames = SubResource("SpriteFrames_2oxqh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(140, 174)
+shape = SubResource("CircleShape2D_pxepm")
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

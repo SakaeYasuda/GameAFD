@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba6b3wv8t77bw"]
+
+[ext_resource type="Script" path="res://scenes/gerencidor_senhas.gd" id="1_81grd"]
+[ext_resource type="Texture2D" uid="uid://ycu6tsfnl35v" path="res://assets/Necromancer/Idle/spr_NecromancerIdle_strip50.png" id="2_nud85"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_42hd3"]
+atlas = ExtResource("2_nud85")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aoip7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_42hd3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="GerencidorSenhas" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_81grd")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 329.0
+offset_right = 698.0
+offset_bottom = 360.0
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "senha errada"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_aoip7")
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

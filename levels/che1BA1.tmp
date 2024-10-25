@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://b071peyj8b3vl"]
+
+[ext_resource type="Texture2D" uid="uid://sp1eo21sa5h4" path="res://assets/Final/Assets/Assets.png" id="1_0apgp"]
+[ext_resource type="Script" path="res://levels/chest.gd" id="1_h2tyv"]
+[ext_resource type="FontFile" uid="uid://dabiddvtrlsp7" path="res://at01.ttf" id="2_f8eis"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ra205"]
+atlas = ExtResource("1_0apgp")
+region = Rect2(238, 72, 17, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efmtm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ra205")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ad626"]
+size = Vector2(18, 13)
+
+[node name="chest" type="Area2D"]
+position = Vector2(16, 0)
+script = ExtResource("1_h2tyv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(39, -10.5)
+scale = Vector2(1, 0.791667)
+sprite_frames = SubResource("SpriteFrames_efmtm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(39, -7)
+shape = SubResource("RectangleShape2D_ad626")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+texture_filter = 1
+offset_left = -37.0
+offset_top = -43.0
+offset_right = 117.0
+offset_bottom = -22.0
+theme_override_fonts/font = ExtResource("2_f8eis")
+text = "Parabens, voce achou o tesouro!"
+editable = false
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -173,8 +173,8 @@ shape = SubResource("RectangleShape2D_6y6jr")
 
 [node name="camera" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
-limit_top = -200
-limit_bottom = 30
+limit_top = -220
+limit_bottom = 0
 editor_draw_limits = true
 
 [node name="animated" type="AnimatedSprite2D" parent="."]

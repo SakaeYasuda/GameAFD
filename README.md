@@ -1,11 +1,11 @@
 # Ilhas do Sábio: A Busca pelo Tesouro Escondido
 
-## 🌍🔄 Descrição do Projeto
-Ilhas do Sábio: A Busca pelo Tesouro Escondido é um jogo educativo de estratégia e exploração em 2D, desenvolvido por Eduardo Sakae Yasuda e Juan Pablo Rocha de Souza, estudantes do 8º semestre de Ciência da Computação no Centro Universitário do Distrito Federal (UDF), sob a orientação da Professora Kadidja Valeria Reginaldo de Oliveira. O jogo foi desenvolvido usando as tecnologias *Godot*, *GDScript* e *VSCode*, e busca ensinar conceitos de *Autômatos de Pilha* e *Gramáticas Livres de Contexto* de forma lúdica e interativa.
+## Descrição
+Em "Ilhas do Sábio: A Busca pelo Tesouro Escondido", embarque em uma jornada inesquecível através de um arquipélago místico, repleto de ilhas enigmáticas, desafios naturais e personagens intrigantes. Este jogo de estratégia e exploração 2D, com uma vibrante estética pixel art, desafia você a descobrir tesouros lendários enquanto gerencia recursos, constrói defesas e desvenda segredos ancestrais.
 
-## 🎯 Objetivos Educacionais
-•⁠  ⁠*Introduzir conceitos de autômatos de pilha* de maneira prática e divertida.
-•⁠  ⁠*Ensinar gramáticas livres de contexto* por meio de uma narrativa adaptativa e não linear.
+## Objetivos Educacionais
+
+O jogo foi desenvolvido com a intenção de introduzir conceitos de autômatos de pilha e gramáticas livres de contexto de uma maneira interativa e acessível. Através de mecânicas de jogo inovadoras e narrativas envolventes, os jogadores podem aprender sobre esses conceitos fundamentais da ciência da computação enquanto desfrutam de uma aventura rica e imersiva.
 
 ## Conceitos Integrados
 
@@ -23,32 +23,19 @@ O jogo utiliza gramáticas livres de contexto para proporcionar diálogos dinâm
 - **Construção de Mundo e Narrativa Adaptativa:** A história se adapta às ações do jogador, utilizando gramáticas livres de contexto para gerar uma narrativa flexível e ramificada.
 
 
-## 🚀 Funcionalidades Principais
+## Características
 
-### 🌍 Exploração de Mundo:
-Os jogadores podem explorar um arquipélago composto por sete ilhas, cada uma com seus próprios desafios, recursos e personagens.
+- **Exploração de Mundo Aberto:** Navegue por um arquipélago composto por sete ilhas únicas, cada uma com seus próprios mistérios e recursos.
+- **Diálogos Dinâmicos:** Interaja com personagens memoráveis, incluindo o enigmático grande sábio, cujas dicas são cruciais para sua busca pelo tesouro.
+- **Decisões que Moldam o Mundo:** Suas escolhas não apenas influenciam o desfecho da sua aventura, mas também afetam o mundo ao seu redor, abrindo novos caminhos e revelando segredos ocultos.
 
-### 🗣️ Diálogos Dinâmicos:
-Através do uso de gramáticas livres de contexto, o jogo permite interações não lineares com os personagens, onde escolhas podem afetar a narrativa.
+## Jogabilidade
 
-### 💡 Decisões Estratégicas:
-As ações do jogador são armazenadas em uma pilha de decisões, permitindo revisitar escolhas anteriores e alterar o curso do jogo.
+Como um destemido monarca em busca de riquezas lendárias, você deve explorar ilhas perigosas, gerenciar recursos com sabedoria e interagir com diversos personagens para coletar dicas sobre a localização do tesouro. A cada ilha explorada, você enfrentará novos desafios e tomará decisões que afetarão o curso da sua jornada.
 
-### 🏝️ Ilhas:
-Cada ilha apresenta um desafio único que oferece dicas importantes para desbloquear o tesouro escondido.
+## Gráficos
 
-## 🎮 Jogabilidade
-Você é um viajante à procura de um tesouro lendário. Ao explorar cada ilha, você enfrentará desafios e enigmas. Suas escolhas estratégicas moldam o mundo ao seu redor, influenciando a narrativa e a progressão do jogo. A mecânica de jogo permite que você:
-
-•⁠  ⁠*Explore as ilhas* e descubra seus segredos.
-•⁠  ⁠*Interaja com personagens memoráveis*, eles oferecem dicas valiosas sobre o tesouro.
-•⁠  ⁠*Tome decisões* que impactam a história e afetam o estado do mundo.
-
-
-## 🛠️ Tecnologias Utilizadas
-•⁠  ⁠*Engine de Jogo*: Godot
-•⁠  ⁠*Linguagem de Programação*: GDScript
-•⁠  ⁠*Editor de Código*: Editor Integrado do Godot
+O jogo se destaca por sua estética pixel art, que traz cada ilha e personagem à vida com detalhes ricos e cores vibrantes. "Ilhas do Sábio" promete uma experiência imersiva, repleta de mistério e aventura.
 
 ## Como Jogar
 
@@ -56,12 +43,13 @@ Você é um viajante à procura de um tesouro lendário. Ao explorar cada ilha, 
 2. **Interaja:** Fale com os habitantes das ilhas para obter dicas valiosas e aprender mais sobre o mundo ao seu redor.
 3. **Decida:** Faça escolhas estratégicas que determinarão o sucesso da sua busca pelo tesouro.
 
-## 🎓 Conclusão
-"Ilhas do Sábio: A Busca pelo Tesouro Escondido" oferece uma experiência que mistura educação e entretenimento. O jogo ensina conceitos fundamentais da ciência da computação, como autômatos de pilha e gramáticas livres de contexto, mas também proporciona uma jornada de exploração e estratégia. Está pronto para encontrar o tesouro escondido?
+## Conclusão
+
+"Ilhas do Sábio: A Busca pelo Tesouro Escondido" não é apenas um jogo de exploração; é uma aventura que testa sua capacidade de tomar decisões estratégicas sob pressão, desvendar mistérios e, acima de tudo, descobrir o verdadeiro valor do tesouro que busca. Prepara-se para esta jornada épica?
 
 ## Contato
 
-Para mais informações, suporte ou feedback, sinta-se à vontade para nos contatar.
+Para mais informações, suporte ou feedback, sinta-se à vontade para nos contatar através de.
 
 ## Licença
 

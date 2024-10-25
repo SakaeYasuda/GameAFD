@@ -30,6 +30,7 @@ directories/dch_directory={
 "you": "res://dialogues/you.dch"
 }
 directories/dtl_directory={
+"fim": "res://dialogues/fim.dtl",
 "timeline": "res://dialogues/timeline.dtl",
 "tpBosque": "res://dialogues/tpBosque.dtl",
 "tpForte": "res://tpForte.dtl",
@@ -61,12 +62,17 @@ layout/default_style="Default"
 variables={
 "tp": false
 }
+extensions_folder="res://addons/dialogic_additions"
+text/advance_delay=0.1
+audio/max_channels=4.0
+animations/cross_fade_default_length=0.5
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/resizable=false
+window/vsync/vsync_mode=0
 window/energy_saving/keep_screen_on.editor=true
 
 [editor_plugins]
