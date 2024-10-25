@@ -28,6 +28,7 @@ func _on_line_edit_text_submitted(password: String):
 		run_dialogue("fim")
 		$LineEdit.hide()
 		$Area2D/Bau.play()
+		$Label2.hide()
 		
 	
 

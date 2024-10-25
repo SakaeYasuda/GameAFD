@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bo40yj6dgt2m5"]
+[gd_scene load_steps=45 format=3 uid="uid://bo40yj6dgt2m5"]
 
 [ext_resource type="Texture2D" uid="uid://pt505sy25w3t" path="res://assets/Country-village_asset_pack/1_Tileset & props/country village tileset.png" id="1_rm2se"]
 [ext_resource type="Texture2D" uid="uid://bq62tr3qbcfik" path="res://assets/Country-village_asset_pack/1_Tileset & props/Country_village_props.png" id="2_28emj"]
@@ -19,6 +19,8 @@
 [ext_resource type="Texture2D" uid="uid://bl0d2o0cq7un8" path="res://assets/stringstar fields/background_0.png" id="17_xb56h"]
 [ext_resource type="Texture2D" uid="uid://dhip52kvkn4iv" path="res://assets/stringstar fields/background_1.png" id="18_6sri3"]
 [ext_resource type="Texture2D" uid="uid://c0u45c7ui50k1" path="res://assets/stringstar fields/background_2.png" id="19_yeahh"]
+[ext_resource type="Texture2D" uid="uid://w7llsqes6wxj" path="res://assets/Evil Wizard/Sprites/Idle.png" id="20_52wcv"]
+[ext_resource type="Script" path="res://actors/MagoInfernal.gd" id="20_fvrwa"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_0r7qs"]
 tile_data = PackedInt32Array(131072, 458753, 4, 196608, 458753, 5, 262144, 458753, 6, 1, 524289, 2, 65537, 524289, 3, 131073, 524289, 4, 196609, 524289, 5, 262145, 524289, 6, 327681, 524289, 7, 2, 589825, 2, 65538, 589825, 3, 131074, 589825, 4, 196610, 589825, 5, 262146, 589825, 6, 327682, 589825, 7, 3, 655361, 2, 65539, 655361, 3, 131075, 655361, 4, 196611, 655361, 5, 262147, 655361, 6, 131076, 720897, 4, 196612, 720897, 5, 262148, 720897, 6)
@@ -620,6 +622,73 @@ shader_parameter/line_color_b = Color(0, 0, 0, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g0u3f"]
 size = Vector2(124, 488.625)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_b16ty"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4qp0"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iw06m"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts4cr"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m50gc"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2v0ur"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ed8iy"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(900, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a83tl"]
+atlas = ExtResource("20_52wcv")
+region = Rect2(1050, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vtjpb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b16ty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4qp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iw06m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ts4cr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m50gc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2v0ur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ed8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a83tl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ssh3e"]
+radius = 32.0624
+
 [node name="World-01" type="Node2D"]
 position = Vector2(0, 1)
 
@@ -894,3 +963,22 @@ position = Vector2(-124, -354)
 scale = Vector2(4.69097, 4.45556)
 texture = ExtResource("19_yeahh")
 centered = false
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("20_fvrwa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(-2, -42)
+scale = Vector2(0.856164, 0.856164)
+sprite_frames = SubResource("SpriteFrames_vtjpb")
+autoplay = "default"
+frame_progress = 0.592204
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(0, -40)
+shape = SubResource("CircleShape2D_ssh3e")
+
+[connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]

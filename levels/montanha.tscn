@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://cbhwtor5bx7b3"]
+[gd_scene load_steps=66 format=3 uid="uid://cbhwtor5bx7b3"]
 
 [ext_resource type="Texture2D" uid="uid://pt505sy25w3t" path="res://assets/Country-village_asset_pack/1_Tileset & props/country village tileset.png" id="1_oov54"]
 [ext_resource type="Texture2D" uid="uid://bq62tr3qbcfik" path="res://assets/Country-village_asset_pack/1_Tileset & props/Country_village_props.png" id="2_r7t46"]
@@ -18,8 +18,11 @@
 [ext_resource type="Texture2D" uid="uid://bqkivoede7hyi" path="res://assets/Glacial-mountains-parallax-background_vnitti/Layers/glacial_mountains.png" id="11_5vyab"]
 [ext_resource type="FontFile" uid="uid://dabiddvtrlsp7" path="res://at01.ttf" id="12_01tvv"]
 [ext_resource type="Texture2D" uid="uid://cc7llxw5y4k3k" path="res://assets/Rodrigo/slime-Sheet.png" id="19_ss7g4"]
+[ext_resource type="Texture2D" uid="uid://4silcujd7ytv" path="res://assets/Blue_witch/B_witch_idle.png" id="20_020wv"]
 [ext_resource type="Texture2D" uid="uid://dwo3g8t21c72t" path="res://assets/Monster_Creatures_Fantasy(Version 1.3)/Monster_Creatures_Fantasy(Version 1.3)/Flying eye/Attack3.png" id="20_kbi30"]
 [ext_resource type="PackedScene" uid="uid://by1csgv1ml1pk" path="res://actors/caixeiroIlha.tscn" id="20_otrit"]
+[ext_resource type="Script" path="res://actors/Bruxa.gd" id="20_qi2f6"]
+[ext_resource type="Texture2D" uid="uid://inowy1k2d5ow" path="res://assets/Blue_witch/B_witch_charge.png" id="22_s2n07"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_0r7qs"]
 tile_data = PackedInt32Array(131072, 458753, 4, 196608, 458753, 5, 262144, 458753, 6, 1, 524289, 2, 65537, 524289, 3, 131073, 524289, 4, 196609, 524289, 5, 262145, 524289, 6, 327681, 524289, 7, 2, 589825, 2, 65538, 589825, 3, 131074, 589825, 4, 196610, 589825, 5, 262146, 589825, 6, 327682, 589825, 7, 3, 655361, 2, 65539, 655361, 3, 131075, 655361, 4, 196611, 655361, 5, 262147, 655361, 6, 131076, 720897, 4, 196612, 720897, 5, 262148, 720897, 6)
@@ -813,6 +816,127 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sydj"]
+atlas = ExtResource("20_020wv")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xkira"]
+atlas = ExtResource("20_020wv")
+region = Rect2(0, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as7cn"]
+atlas = ExtResource("20_020wv")
+region = Rect2(0, 96, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23lfe"]
+atlas = ExtResource("20_020wv")
+region = Rect2(0, 144, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1hm6"]
+atlas = ExtResource("20_020wv")
+region = Rect2(0, 192, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_scpny"]
+atlas = ExtResource("20_020wv")
+region = Rect2(0, 240, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fvefr"]
+atlas = ExtResource("22_s2n07")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0shlb"]
+atlas = ExtResource("22_s2n07")
+region = Rect2(0, 48, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e8mi"]
+atlas = ExtResource("22_s2n07")
+region = Rect2(0, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rhq2"]
+atlas = ExtResource("22_s2n07")
+region = Rect2(0, 144, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0q1h"]
+atlas = ExtResource("22_s2n07")
+region = Rect2(0, 192, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s2vlt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sydj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkira")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as7cn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23lfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1hm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_scpny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sydj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xkira")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as7cn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23lfe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1hm6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_scpny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvefr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0shlb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e8mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rhq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0q1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fvefr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0shlb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e8mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1rhq2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0q1h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_op6dg"]
+radius = 13.2631
+
 [node name="World-01" type="Node2D"]
 position = Vector2(0, 1)
 
@@ -830,15 +954,15 @@ top_level = true
 position = Vector2(89, -1)
 
 [node name="BG" type="ParallaxBackground" parent="."]
-visible = false
 
 [node name="09" type="ParallaxLayer" parent="BG"]
 position = Vector2(-485, -270)
-motion_scale = Vector2(0.7, 1)
+motion_scale = Vector2(1, 1.429)
 motion_mirroring = Vector2(570, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="BG/09"]
-scale = Vector2(1.5, 1.5)
+position = Vector2(0, -134)
+scale = Vector2(2.36979, 2.12037)
 texture = ExtResource("5_6bmq6")
 centered = false
 
@@ -848,7 +972,18 @@ motion_scale = Vector2(0.4, 1)
 motion_mirroring = Vector2(570, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="BG/03"]
-scale = Vector2(1.5, 1.5)
+scale = Vector2(1.52604, 1.5)
+texture = ExtResource("6_jw4n0")
+centered = false
+
+[node name="03" type="ParallaxLayer" parent="BG/03"]
+position = Vector2(-485, -270)
+motion_scale = Vector2(0.4, 1)
+motion_mirroring = Vector2(570, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BG/03/03"]
+position = Vector2(1630, 266)
+scale = Vector2(1.52604, 1.5)
 texture = ExtResource("6_jw4n0")
 centered = false
 
@@ -894,16 +1029,18 @@ texture = ExtResource("10_mcc0c")
 centered = false
 
 [node name="08" type="ParallaxLayer" parent="BG"]
+visible = false
 position = Vector2(-485, -270)
 motion_scale = Vector2(0.7, 1)
 motion_mirroring = Vector2(570, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="BG/08"]
-scale = Vector2(1.50347, 1.5)
+scale = Vector2(2.14844, 1.5)
 texture = ExtResource("11_5vyab")
 centered = false
 
 [node name="BG2" type="ParallaxBackground" parent="."]
+visible = false
 
 [node name="09" type="ParallaxLayer" parent="BG2"]
 position = Vector2(-485, -270)
@@ -1000,7 +1137,7 @@ collision_layer = 255
 collision_mask = 255
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limite"]
-position = Vector2(-547, -126)
+position = Vector2(-548, -129)
 shape = SubResource("RectangleShape2D_g0u3f")
 
 [node name="Limite2" type="StaticBody2D" parent="."]
@@ -1009,14 +1146,14 @@ collision_layer = 255
 collision_mask = 255
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limite2"]
-position = Vector2(-617, -126)
+position = Vector2(-644, -129)
 shape = SubResource("RectangleShape2D_g0u3f")
 
 [node name="LineEdit" type="LineEdit" parent="."]
-offset_left = 465.0
-offset_top = -54.0
-offset_right = 524.0
-offset_bottom = -33.0
+offset_left = 448.0
+offset_top = -72.0
+offset_right = 507.0
+offset_bottom = -51.0
 tooltip_text = "sd"
 theme_override_fonts/font = ExtResource("12_01tvv")
 theme_override_font_sizes/font_size = 16
@@ -1053,8 +1190,9 @@ editable = false
 virtual_keyboard_enabled = false
 
 [node name="Rodrigo2" type="AnimatedSprite2D" parent="."]
-position = Vector2(-224.011, -14.6071)
-scale = Vector2(-0.876113, 1.22739)
+visible = false
+position = Vector2(440.097, -22.3544)
+scale = Vector2(-1.43255, 2.00693)
 sprite_frames = SubResource("SpriteFrames_fpu8m")
 animation = &"idle"
 autoplay = "idle"
@@ -1076,5 +1214,28 @@ sprite_frames = SubResource("SpriteFrames_gt43l")
 autoplay = "default"
 frame_progress = 0.0841409
 
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(440.097, -22.3544)
+rotation = -3.14159
+scale = Vector2(1.43255, -2.00693)
+script = ExtResource("20_qi2f6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(73.3638, 2.66798)
+scale = Vector2(0.791761, 0.572091)
+sprite_frames = SubResource("SpriteFrames_s2vlt")
+autoplay = "default"
+frame_progress = 0.078455
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+scale = Vector2(1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D"]
+position = Vector2(73.3638, 1.67144)
+shape = SubResource("CircleShape2D_op6dg")
+
 [node name="caixeiroIlha" parent="." instance=ExtResource("20_otrit")]
 position = Vector2(-455, -15)
+
+[connection signal="body_entered" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/Area2D" to="CharacterBody2D" method="_on_area_2d_body_exited"]

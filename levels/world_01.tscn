@@ -436,7 +436,7 @@ position = Vector2(-169, -15)
 position = Vector2(602, -15)
 
 [node name="Rei" parent="." instance=ExtResource("15_wwyh1")]
-position = Vector2(458, -23)
+position = Vector2(458, -18)
 
 [node name="transition" type="CanvasLayer" parent="."]
 script = ExtResource("10_j440y")

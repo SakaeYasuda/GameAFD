@@ -10,9 +10,9 @@
 [ext_resource type="Script" path="res://levels/transition.gd" id="10_dq630"]
 [ext_resource type="Shader" path="res://shaders/transition.gdshader" id="11_nya7m"]
 [ext_resource type="Script" path="res://scripts/color_rect.gd" id="12_0ogus"]
+[ext_resource type="Script" path="res://actors/Mago.gd" id="12_cs1vc"]
 [ext_resource type="PackedScene" uid="uid://cep1u1hmgaht8" path="res://actors/caixeiro_vila.tscn" id="14_5ekqo"]
 [ext_resource type="FontFile" uid="uid://dabiddvtrlsp7" path="res://at01.ttf" id="14_wtfvc"]
-[ext_resource type="Script" path="res://levels/King.gd" id="15_6os8k"]
 [ext_resource type="PackedScene" uid="uid://cobhif55f6ilb" path="res://actors/caixeiroMontanha.tscn" id="15_8r41k"]
 [ext_resource type="Texture2D" uid="uid://cofbbuhkcqmr5" path="res://assets/Wizard Pack/Idle.png" id="17_cew7v"]
 
@@ -575,9 +575,6 @@ shader_parameter/line_color_b = Color(0, 0, 0, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g0u3f"]
 size = Vector2(124, 488.625)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_445we"]
-size = Vector2(86, 43)
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_w3uh1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3t65y"]
@@ -740,6 +737,9 @@ animations = [{
 "speed": 9.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_445we"]
+size = Vector2(41, 54)
+
 [node name="World-01" type="Node2D"]
 position = Vector2(0, 1)
 
@@ -896,19 +896,6 @@ collision_mask = 255
 position = Vector2(-429, -124.313)
 shape = SubResource("RectangleShape2D_g0u3f")
 
-[node name="LineEdit3" type="LineEdit" parent="."]
-offset_left = 359.0
-offset_top = -60.0
-offset_right = 532.0
-offset_bottom = -37.0
-tooltip_text = "sd"
-theme_override_fonts/font = ExtResource("14_wtfvc")
-theme_override_font_sizes/font_size = 16
-text = "O tesouro esta proximo ao chocalho"
-alignment = 1
-editable = false
-virtual_keyboard_enabled = false
-
 [node name="LineEdit2" type="LineEdit" parent="."]
 offset_left = -255.0
 offset_top = -68.0
@@ -948,45 +935,13 @@ alignment = 1
 editable = false
 virtual_keyboard_enabled = false
 
-[node name="LineEdit5" type="LineEdit" parent="."]
-offset_left = 85.0
-offset_top = -61.0
-offset_right = 199.0
-offset_bottom = -40.0
-tooltip_text = "sd"
-theme_override_fonts/font = ExtResource("14_wtfvc")
-theme_override_font_sizes/font_size = 16
-text = "Chegue perto do sabio"
-alignment = 1
-editable = false
-virtual_keyboard_enabled = false
-
-[node name="LineEdit6" type="LineEdit" parent="."]
-offset_left = 288.0
-offset_top = -46.0
-offset_right = 346.0
-offset_bottom = -25.0
-tooltip_text = "sd"
-theme_override_fonts/font = ExtResource("14_wtfvc")
-theme_override_font_sizes/font_size = 16
-text = "Mais perto!"
-alignment = 1
-editable = false
-virtual_keyboard_enabled = false
-
-[node name="King" type="Area2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(469, -14)
-collision_layer = 3
-collision_mask = 3
-script = ExtResource("15_6os8k")
+script = ExtResource("12_cs1vc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="King"]
-position = Vector2(-30, -8.5)
-shape = SubResource("RectangleShape2D_445we")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="King"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
-position = Vector2(-3.00001, -6)
+position = Vector2(-12, -4)
 scale = Vector2(0.472944, 0.405263)
 sprite_frames = SubResource("SpriteFrames_dylhb")
 animation = &"wiseman"
@@ -994,11 +949,19 @@ autoplay = "wiseman"
 frame_progress = 0.70945
 flip_h = true
 
+[node name="Mago" type="Area2D" parent="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Mago"]
+position = Vector2(-7.5, -14)
+shape = SubResource("RectangleShape2D_445we")
+
 [node name="caixeiroVila" parent="." instance=ExtResource("14_5ekqo")]
 position = Vector2(-205, -18)
 
 [node name="caixeiroMontanha" parent="." instance=ExtResource("15_8r41k")]
 position = Vector2(590, -16)
 
-[connection signal="body_entered" from="King" to="King" method="_on_body_entered"]
-[connection signal="body_entered" from="King" to="King" method="_on_Sage_body_entered"]
+[connection signal="body_entered" from="CharacterBody2D/Mago" to="CharacterBody2D" method="_on_mago_body_entered"]
+[connection signal="body_exited" from="CharacterBody2D/Mago" to="CharacterBody2D" method="_on_mago_body_exited"]

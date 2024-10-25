@@ -25,11 +25,23 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
+"Bruxa": "res://dialogues/Bruxa.dch",
+"Mago": "res://dialogues/Mago.dch",
+"MagoEscuridao": "res://dialogues/MagoEscuridao.dch",
+"MagoInfernal": "res://dialogues/MagoInfernal.dch",
+"Rei": "res://dialogues/Rei.dch",
+"Samurai": "res://dialogues/Samurai.dch",
 "caixeiro": "res://caixeiro.dch",
 "reiDg": "res://dialogues/reiDg.dch",
 "you": "res://dialogues/you.dch"
 }
 directories/dtl_directory={
+"Bruxa": "res://dialogues/Bruxa.dtl",
+"Mago": "res://dialogues/Mago.dtl",
+"MagoEscuridao": "res://dialogues/MagoEscuridao.dtl",
+"MagoInfernal": "res://dialogues/MagoInfernal.dtl",
+"Rei": "res://dialogues/Rei.dtl",
+"Samurai": "res://dialogues/Samurai.dtl",
 "fim": "res://dialogues/fim.dtl",
 "timeline": "res://dialogues/timeline.dtl",
 "tpBosque": "res://dialogues/tpBosque.dtl",
@@ -71,7 +83,6 @@ animations/cross_fade_default_length=0.5
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-window/size/resizable=false
 window/vsync/vsync_mode=0
 window/energy_saving/keep_screen_on.editor=true
 

@@ -1,10 +1,13 @@
 reiDg: Ah, aventureiro, seja bem-vindo ao meu reino!
 reiDg: Ouvi rumores de que estás em busca de um tesouro, não é?
 - Sim
-	reiDg: Pois saiba que há, de fato, um grande baú escondido em algum lugar desse reino.
+	reiDg: Pois saiba que há, de fato, um grande baú em algum lugar desse reino.
 	reiDg: Mas para abri-lo, precisas de uma senha secreta.
-	reiDg: Eu só sei que o primeiro digito é 6
-	reiDg: Mas lembre-se, aqui, tudo funciona como uma pilha – sim, igual aquelas que você usa pra organizar coisas!
-	reiDg: Cada decisão que você toma vai empilhando uma nova camada.
+	reiDg: Você já ouviu falar dos autômatos?
+	reiDg: Eles são como máquinas mágicas que seguem instruções e passam por estados.
+	reiDg: Eles começam em um estado, recebem símbolos e mudam para outro, tudo muito preciso!
+	reiDg: Agora, os autômatos de pilha têm um truque especial\: eles usam uma pilha, onde empilham e desempilham símbolos para tomar decisões. 
+	reiDg: E aqui, para a navegação nas ilhas, tudo é delicado como uma pilha de folhas no vento. Cada ação que você toma empilha uma folha, e só podemos tocar a que está no topo. O segredo está em controlar essa pilha com sabedoria!
+	reiDg: E aqui, no Bosque, vou te dar o primeiro número da senha do tesouro\: 3. Agora, siga para a Vila dos Reis e fale com o Rei. Ele te guiará para a próxima parte.
 - Não
 	reiDg: Então suma daqui!
