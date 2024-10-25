@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://GerenciadorSenhas.gd" id="1_1xo4l"]
 [ext_resource type="FontFile" uid="uid://dabiddvtrlsp7" path="res://at01.ttf" id="2_8l7rq"]
-[ext_resource type="Texture2D" uid="uid://sp1eo21sa5h4" path="res://assets/Final/Assets/Assets.png" id="2_gwnt6"]
+[ext_resource type="Texture2D" uid="uid://sp1eo21sa5h4" path="res://levels/Assets.png" id="2_gwnt6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cloib"]
 atlas = ExtResource("2_gwnt6")

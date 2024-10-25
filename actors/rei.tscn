@@ -147,6 +147,7 @@ script = ExtResource("1_criys")
 position = Vector2(-0.999998, 12)
 scale = Vector2(0.890625, 0.90625)
 sprite_frames = SubResource("SpriteFrames_xpr3y")
+autoplay = "default"
 
 [node name="ChatDetector" type="Area2D" parent="."]
 
