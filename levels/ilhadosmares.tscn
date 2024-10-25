@@ -1000,5 +1000,5 @@ position = Vector2(-205, -18)
 [node name="caixeiroMontanha" parent="." instance=ExtResource("15_8r41k")]
 position = Vector2(590, -16)
 
-[connection signal="body_entered" from="King" to="King" method="_on_Sage_body_entered"]
 [connection signal="body_entered" from="King" to="King" method="_on_body_entered"]
+[connection signal="body_entered" from="King" to="King" method="_on_Sage_body_entered"]

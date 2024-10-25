@@ -1,8 +1,0 @@
-Deseja ir para vila dos reis?
-- Sim
-	you: comop sdgnpfo
-	[signal arg="tp"]
-- Não
-	[end_timeline]
-do 
-[end_timeline]
