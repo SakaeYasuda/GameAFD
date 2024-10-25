@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://csa3t4te5g3n"]
+
+[sub_resource type="GDScript" id="GDScript_y7kc2"]
+script/source = "extends Area2D
+
+
+# Called when the node enters the scene tree for the first time.
+func action() -> void:
+	Dialogic.start(\"timeline\") # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Actionable" type="Area2D"]
+collision_layer = 513
+script = SubResource("GDScript_y7kc2")

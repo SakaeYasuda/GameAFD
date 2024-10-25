@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cfyorjjufyc70" path="res://assets/Country-village_asset_pack/2_Parallax background/Back_Forest_1.png" id="8_tokps"]
 [ext_resource type="Shader" path="res://shaders/transition.gdshader" id="10_0uk06"]
 [ext_resource type="Script" path="res://levels/transition.gd" id="10_j440y"]
-[ext_resource type="Script" path="res://scripts/color_rect.gd" id="11_g3ide"]
+[ext_resource type="Script" path="res://color_rect.gd" id="11_g3ide"]
 [ext_resource type="PackedScene" uid="uid://b8paa4407ucq1" path="res://scenes/tp.tscn" id="13_vyth3"]
 [ext_resource type="FontFile" uid="uid://dabiddvtrlsp7" path="res://at01.ttf" id="14_aogo1"]
 [ext_resource type="PackedScene" uid="uid://clw1ctv26yrjp" path="res://actors/rei.tscn" id="15_wwyh1"]
@@ -427,13 +427,14 @@ layer_1/tile_data = PackedInt32Array(-2, 131073, 11, -3, 327681, 11, -262143, 45
 
 [node name="Player" parent="." instance=ExtResource("3_uinls")]
 top_level = true
-position = Vector2(202, -3)
+position = Vector2(202, -2)
+script = null
 
 [node name="caixeiroForteSombrio" parent="." instance=ExtResource("4_usnpw")]
-position = Vector2(-169, -15)
+position = Vector2(-169, -16)
 
 [node name="caixeiroVila" parent="." instance=ExtResource("4_bbdk5")]
-position = Vector2(602, -15)
+position = Vector2(602, -17)
 
 [node name="Rei" parent="." instance=ExtResource("15_wwyh1")]
 position = Vector2(458, -23)
@@ -590,7 +591,6 @@ scale = Vector2(1.6, 1.6)
 motion_scale = Vector2(1.4, 1.4)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3/Layer 2"]
-position = Vector2(0, 1.875)
 texture = ExtResource("6_c6drh")
 
 [node name="Layer 3" type="ParallaxLayer" parent="ParallaxLayer3"]
@@ -682,39 +682,32 @@ editable = false
 virtual_keyboard_enabled = false
 
 [node name="LineEdit7" type="LineEdit" parent="."]
-offset_left = 29.0
-offset_top = -108.0
-offset_right = 308.0
-offset_bottom = -87.0
-theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
+visible = false
+offset_left = 289.0
+offset_top = -53.0
+offset_right = 429.0
+offset_bottom = -32.0
+tooltip_text = "sd"
 theme_override_fonts/font = ExtResource("14_aogo1")
 theme_override_font_sizes/font_size = 16
-text = "Aperte \"E\" perto de um personagem para interagir com ele"
+text = "basta chegar perto deles =>"
 alignment = 1
 editable = false
-expand_to_text_length = true
 virtual_keyboard_enabled = false
-middle_mouse_paste_enabled = false
-selecting_enabled = false
 
 [node name="LineEdit4" type="LineEdit" parent="."]
-offset_left = 29.0
-offset_top = -85.0
-offset_right = 184.0
-offset_bottom = -64.0
+visible = false
+offset_left = 74.0
+offset_top = -95.0
+offset_right = 146.0
+offset_bottom = -74.0
 tooltip_text = "sd"
-theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("14_aogo1")
 theme_override_font_sizes/font_size = 16
-text = "Use \"W\", \"A\", \"D\" para se mover"
+text = "Bem-vindo ao"
 alignment = 1
 editable = false
-expand_to_text_length = true
-context_menu_enabled = false
 virtual_keyboard_enabled = false
-shortcut_keys_enabled = false
-middle_mouse_paste_enabled = false
-selecting_enabled = false
 
 [node name="LineEdit2" type="LineEdit" parent="."]
 visible = false

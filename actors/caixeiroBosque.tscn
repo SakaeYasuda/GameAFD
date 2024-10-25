@@ -369,14 +369,13 @@ script = ExtResource("1_71ey7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_l7xvi")
-autoplay = "default"
 
 [node name="ChatDetector" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ChatDetector"]
 shape = SubResource("CircleShape2D_li8oc")
 
-[connection signal="body_entered" from="ChatDetector" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="ChatDetector" to="." method="_on_chat_detector_body_entered"]
-[connection signal="body_exited" from="ChatDetector" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="ChatDetector" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="ChatDetector" to="." method="_on_chat_detector_body_exited"]
+[connection signal="body_exited" from="ChatDetector" to="." method="_on_area_2d_body_exited"]

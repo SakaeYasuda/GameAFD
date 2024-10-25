@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ProjetoAFD"
-run/main_scene="res://scripts/menu.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 boot_splash/bg_color=Color(0.813258, 0.813258, 0.813258, 1)
 boot_splash/show_image=false
@@ -30,7 +30,6 @@ directories/dch_directory={
 "you": "res://dialogues/you.dch"
 }
 directories/dtl_directory={
-"fim": "res://dialogues/fim.dtl",
 "timeline": "res://dialogues/timeline.dtl",
 "tpBosque": "res://dialogues/tpBosque.dtl",
 "tpForte": "res://tpForte.dtl",
@@ -72,7 +71,6 @@ animations/cross_fade_default_length=0.5
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/resizable=false
-window/vsync/vsync_mode=0
 window/energy_saving/keep_screen_on.editor=true
 
 [editor_plugins]

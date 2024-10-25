@@ -369,7 +369,6 @@ script = ExtResource("1_m8yix")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7j8tn")
-autoplay = "default"
 
 [node name="ChatDetector" type="Area2D" parent="."]
 
