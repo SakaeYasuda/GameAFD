@@ -958,7 +958,7 @@ position = Vector2(-7.5, -14)
 shape = SubResource("RectangleShape2D_445we")
 
 [node name="caixeiroVila" parent="." instance=ExtResource("14_5ekqo")]
-position = Vector2(-205, -18)
+position = Vector2(-205, -15)
 
 [node name="caixeiroMontanha" parent="." instance=ExtResource("15_8r41k")]
 position = Vector2(590, -16)

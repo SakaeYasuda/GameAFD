@@ -5,7 +5,7 @@ var player_in_area = false
 func _process(delta):
 	if player_in_area:
 		if Input.is_action_just_pressed("e"):
-			run_dialogue("timeline")
+			run_dialogue("Rei")
 			
 
 func run_dialogue(dialogue_string):

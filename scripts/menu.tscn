@@ -18,26 +18,67 @@ offset_right = 1136.0
 offset_bottom = 200.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
 theme = ExtResource("2_h6etn")
 script = ExtResource("1_elfgn")
 
-[node name="Screenshot1" type="Sprite2D" parent="."]
-position = Vector2(639, 373.25)
-scale = Vector2(0.675352, 0.76188)
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1055.5
+offset_top = -147.0
+offset_right = 74.5
+offset_bottom = 151.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+
+[node name="Screenshot1" type="Sprite2D" parent="VBoxContainer"]
+position = Vector2(434.333, 168.667)
+scale = Vector2(0.934882, 0.934882)
 texture = ExtResource("3_e8qh1")
 
 [node name="Button" type="Button" parent="."]
-layout_mode = 2
-offset_left = 543.0
-offset_top = 374.0
-offset_right = 753.0
-offset_bottom = 444.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.404968
+anchor_right = 0.5
+anchor_bottom = 0.404968
+offset_left = -348.5
+offset_top = 15.0
+offset_right = -140.5
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_default_cursor_shape = 2
 theme = ExtResource("2_h6etn")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 48
 text = "Jogar"
 
 [node name="TextureButton" type="TextureButton" parent="Button"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 96.0
+offset_right = 73.0
+offset_bottom = 140.0
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 2
+offset_left = 543.0
+offset_top = 478.0
+offset_right = 753.0
+offset_bottom = 548.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_h6etn")
+theme_override_font_sizes/font_size = 32
+text = "Como jogar"
+
+[node name="TextureButton" type="TextureButton" parent="Button2"]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 96.0
@@ -58,3 +99,4 @@ text = "Ilha dos Sabios"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -48,12 +48,10 @@ script = ExtResource("1_1xo4l")
 
 [node name="LineEdit" type="LineEdit" parent="."]
 visible = false
-offset_left = 120.0
+offset_left = 101.0
 offset_top = 131.0
-offset_right = 160.0
+offset_right = 178.0
 offset_bottom = 152.0
-grow_horizontal = 2
-grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_8l7rq")
 theme_override_font_sizes/font_size = 0

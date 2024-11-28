@@ -436,7 +436,7 @@ position = Vector2(-169, -15)
 position = Vector2(602, -15)
 
 [node name="Rei" parent="." instance=ExtResource("15_wwyh1")]
-position = Vector2(458, -18)
+position = Vector2(346, -18)
 
 [node name="transition" type="CanvasLayer" parent="."]
 script = ExtResource("10_j440y")
@@ -682,10 +682,11 @@ editable = false
 virtual_keyboard_enabled = false
 
 [node name="LineEdit7" type="LineEdit" parent="."]
-offset_left = 29.0
-offset_top = -108.0
-offset_right = 308.0
-offset_bottom = -87.0
+visible = false
+offset_left = 32.0
+offset_top = -96.0
+offset_right = 311.0
+offset_bottom = -75.0
 theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("14_aogo1")
 theme_override_font_sizes/font_size = 16
@@ -698,15 +699,35 @@ middle_mouse_paste_enabled = false
 selecting_enabled = false
 
 [node name="LineEdit4" type="LineEdit" parent="."]
-offset_left = 29.0
-offset_top = -85.0
-offset_right = 184.0
-offset_bottom = -64.0
+offset_left = 32.0
+offset_top = -118.0
+offset_right = 193.0
+offset_bottom = -97.0
 tooltip_text = "sd"
 theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("14_aogo1")
 theme_override_font_sizes/font_size = 16
-text = "Use \"W\", \"A\", \"D\" para se mover"
+text = "Aperte o botao \"?\" para ajuda"
+alignment = 1
+editable = false
+expand_to_text_length = true
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+
+[node name="LineEdit9" type="LineEdit" parent="."]
+visible = false
+offset_left = 33.0
+offset_top = -74.0
+offset_right = 295.0
+offset_bottom = -53.0
+tooltip_text = "sd"
+theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("14_aogo1")
+theme_override_font_sizes/font_size = 16
+text = "Clique na tela para avancar no dialogo com personagens"
 alignment = 1
 editable = false
 expand_to_text_length = true

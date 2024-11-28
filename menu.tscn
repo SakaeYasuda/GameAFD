@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://pnk6jc5ylfbs"]
+
+[ext_resource type="Script" path="res://menu2.gd" id="1_vgc3g"]
+[ext_resource type="Texture2D" uid="uid://bq5jrnwupv3mf" path="res://Screenshot_1.jpg" id="2_3m4o3"]
+[ext_resource type="FontFile" uid="uid://bu0vrrulm7orr" path="res://PixelOperator-Bold.ttf" id="3_ybu8k"]
+[ext_resource type="Theme" uid="uid://clmqolemra7jj" path="res://assets/default.tres" id="4_4cyc0"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_vgc3g")
+
+[node name="Screenshot1" type="Sprite2D" parent="."]
+position = Vector2(723, 522)
+scale = Vector2(1.33296, 1.33296)
+texture = ExtResource("2_3m4o3")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -408.0
+offset_top = 79.0
+offset_right = 408.0
+offset_bottom = 157.0
+grow_horizontal = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ybu8k")
+theme_override_font_sizes/font_size = 128
+text = "Ilhas do Sábio"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = -40.0
+offset_right = 104.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+theme = ExtResource("4_4cyc0")
+theme_override_font_sizes/font_size = 48
+text = "Jogar"
+
+[node name="TextureButton" type="TextureButton" parent="Button"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 96.0
+offset_right = 73.0
+offset_bottom = 140.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

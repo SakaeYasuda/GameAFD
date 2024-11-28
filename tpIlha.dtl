@@ -1,4 +1,4 @@
-caixeiro: Deseja uma carona para a Ilha das Serpentes?
+caixeiro: Deseja uma carona para a Ilha dos Mares?
 - Sim
 	caixeiro: Então vamos logo
 	[signal arg="tp1"]

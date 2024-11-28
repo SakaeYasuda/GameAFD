@@ -20,7 +20,7 @@ func run_dialogue(dialogue_string):
 	Dialogic.start(dialogue_string)
 
 func _on_line_edit_text_submitted(password: String):
-	if password != "3175625":
+	if password != "3174625":
 		$LineEdit.hide()
 		$Label.show()
 		return

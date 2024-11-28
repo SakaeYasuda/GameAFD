@@ -1,6 +1,7 @@
-[gd_scene load_steps=39 format=3 uid="uid://m7vsx57fthd5"]
+[gd_scene load_steps=40 format=3 uid="uid://m7vsx57fthd5"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_w04t6"]
+[ext_resource type="PackedScene" uid="uid://8qapadak7ujr" path="res://scenes/hud.tscn" id="2_0g45u"]
 [ext_resource type="Texture2D" uid="uid://1ex0oxa7oiru" path="res://assets/Warrior/Individual Sprite/Jump/Warrior_Jump_1.png" id="2_3biup"]
 [ext_resource type="Texture2D" uid="uid://d021oef8ctcj4" path="res://assets/Warrior/Individual Sprite/Jump/Warrior_Jump_2.png" id="3_r1bp6"]
 [ext_resource type="Texture2D" uid="uid://bj3mrnp40t8b" path="res://assets/Warrior/Individual Sprite/Jump/Warrior_Jump_3.png" id="4_5m538"]
@@ -166,6 +167,8 @@ radius = 15.1327
 position = Vector2(0, -1)
 collision_mask = 2
 script = ExtResource("1_w04t6")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("2_0g45u")]
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -16.5)
